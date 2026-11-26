@@ -1,0 +1,130 @@
+paths:
+  fastq_R1:
+  fastq_R2:
+  reference:
+  output_dir:
+  hq_positions:
+  chain_file:
+  chromosome_mapping:
+  pickle_file:
+  SNP_Info:
+  Cluster_json:
+  representative_accessions:
+
+parameters:
+  fastp:
+    window_size:
+    quality:
+    min_len:
+  call_variants:
+    CHECKPOINT:
+    regions:
+  variant_filtering:
+    min_QUAL:
+    min_DP:
+  breadth_of_coverage:
+    depth_cutoff:
+  clustering_cd_hit:
+    clustering_identity: 0.90
+  screen_2_snp_combinations:
+    max_fingerprints:
+  identification_threshold:
+
+resources:
+  fastqc_raw:
+    threads:
+    memory:
+  trim_reads:
+    threads:
+    memory:
+  fastqc_trimmed:
+    threads:
+    memory:
+  consensus_fasta_index:
+    threads:
+    memory:
+  alignment:
+    threads:
+    memory:
+  qualimap:
+    threads:
+    memory:
+  samtools_depth:
+    threads:
+    memory:
+  calculate_mean_and_median_depth:
+    threads: 1
+    memory:
+  breadth_of_coverage:
+    threads: 1
+    memory:
+  count_bam:
+    threads:
+    memory:
+  fold_80:
+    threads: 1
+    memory:
+  make_examples:
+    threads: 1
+    memory:
+  call_variants:
+    threads: 1
+    memory:
+  postprocess_variants:
+    threads:
+    memory:
+  variant_filtering:
+    threads: 1
+    memory:
+  hq_positions:
+    threads: 1
+    memory:
+  liftover:
+    threads: 1
+    memory:
+  chromosome_name_conversion:
+    threads: 1
+    memory:
+  hq_variants:
+    threads: 1
+    memory:
+  genotype_detection:
+    threads: 1
+    memory:
+  pickle_to_fasta:
+    threads: 1
+    memory:
+  clustering_cd_hit:
+    threads:
+    memory:
+  update_cluster_json:
+    threads: 1
+    memory:
+  feature_selection:
+    threads: 1
+    memory:
+  add_info_to_indices:
+    threads: 1
+    memory:
+  list_remaining_accessions:
+    threads: 1
+    memory:
+  screen_2_snp_combinations:
+    threads: 1
+    memory:
+  add_info_to_snp_combinations:
+    threads: 1
+    memory:
+  unique_SNPs:
+    threads: 1
+    memory:
+  bed_maker:
+    threads: 1
+    memory:
+  vcf_maker:
+    threads: 1
+    memory:
+  report_html:
+    threads: 1
+    memory:
+

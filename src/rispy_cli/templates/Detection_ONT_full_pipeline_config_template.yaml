@@ -1,0 +1,110 @@
+paths:
+  fastq:
+  output_dir:
+  reference:
+  chain_file:
+  chromosome_mapping:
+  centromere:
+  fingerprints:
+
+parameters:
+  chopper:
+    quality:
+    min_len:
+  breadth_of_coverage:
+    depth_cutoff:
+  call_variants:
+    CHECKPOINT:
+    regions:
+  variant_filtering:
+    min_QUAL:
+    min_DP:
+  top_n:
+  identification_threshold:
+
+
+resources:
+  nanoplot_raw:
+    threads:
+    memory:
+  extract_headers:
+    threads:
+    memory:
+  filter_reads:
+    threads:
+    memory:
+  trim_reads:
+    threads:
+    memory:
+  nanoplot_after_filtering:
+    threads:
+    memory:
+  index_reference:
+    threads:
+    memory:
+  alignment:
+    threads:
+    memory:
+  qualimap:
+    threads:
+    memory:
+  samtools_depth:
+    threads:
+    memory:
+  calculate_mean_and_median_depth:
+    threads: 1
+    memory:
+  breadth_of_coverage:
+    threads: 1
+    memory:
+  count_bam:
+    threads:
+    memory:
+  fold_80:
+    threads: 1
+    memory:
+  make_examples:
+    threads: 1
+    memory:
+  call_variants:
+    threads: 1
+    memory:
+  postprocess_variants:
+    threads:
+    memory:
+  variant_filtering:
+    threads: 1
+    memory:
+  unique_SNPs:
+    threads: 1
+    memory:
+  bed_maker:
+    threads: 1
+    memory:
+  liftover:
+    threads: 1
+    memory:
+  chromosome_name_conversion:
+    threads: 1
+    memory:
+  filter_fingerprints:
+    threads: 1
+    memory:
+  validation_fingerprints_alt:
+    threads: 1
+    memory:
+  validation_fingerprints_ref:
+    threads: 1
+    memory:
+  barcodes_positions_new_ref:
+    threads: 1
+    memory:
+  chromosome_arms:
+    threads: 1
+    memory:
+  aggregate_fingerprint_matches:
+    threads: 1
+    memory:
+  report_html:
+    threads: 1
+    memory:

@@ -1,0 +1,16 @@
+##fileformat=VCFv4.2
+##contig=<ID=NC_089035.1,length=43929697>
+##contig=<ID=NC_089036.1,length=36447916>
+##contig=<ID=NC_089037.1,length=37399924>
+##contig=<ID=NC_089038.1,length=36078568>
+##contig=<ID=NC_089039.1,length=30400764>
+##contig=<ID=NC_089040.1,length=32122276>
+##contig=<ID=NC_089041.1,length=29936421>
+##contig=<ID=NC_089042.1,length=28605474>
+##contig=<ID=NC_089043.1,length=27474823>
+##contig=<ID=NC_089044.1,length=23931887>
+##contig=<ID=NC_089045.1,length=31111469>
+##contig=<ID=NC_089046.1,length=28271460>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+NC_089037.1	3844229	6264573	C	G	.	.	.
+NC_089041.1	15410895	18420294	A	G	.	.	.
